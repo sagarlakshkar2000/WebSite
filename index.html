@@ -1,161 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body class="bg-light ">
+  <body>
     <!-- Header  -->
 
     <header>
+      <nav class="navbar navbar-expand-lg bg-dark bg-gradient text-white">
+        <div class="container">
+          <a
+            class="navbar-brand text-white text-uppercase fs-5 fw-bold border border-1 px-3 shadow-lg"
+            href="#"
+            >first site</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto ml-5 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-capitalize fs-6 fw-bold"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
 
-        <nav class="navbar navbar-expand-lg bg-light  p-3 mr-7  bg-body rounded">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-                </button>
-                <div class="collapse navbar-collapse m-2 " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto ml-5 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-capitalize fs-6 fw-bold"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link acive" href="index.html">Home</a>
-                        </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-capitalize fs-6 fw-bold"
+                  href="contactus.html"
+                  >Contact us</a
+                >
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="gallery.html">Gallery</a>
-                        </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-capitalize fs-6 fw-bold"
+                  href="aboutus.html"
+                  >About us
+                </a>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contactus.html">Contact us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="aboutus.html">About us </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="service.html">service </a>
-                        </li>
-                        
-
-                    </ul>
-                    <form class="d-flex " role="search">
-                        <input class="form-control me-2" type="search" placeholder="free to search" aria-label="Search">
-                        <button class="btn btn-outline-dark " type="submit">search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-capitalize fs-6 fw-bold"
+                  href="service.html"
+                  >service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--  carousel  -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/img1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/img_3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/immg2.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner" style="height: 400px">
+        <div class="carousel-item active">
+          <img
+            src="images/img1.jpg"
+            class="d-block w-100 img-fluid"
+            alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img_3.jpg"
+            class="d-block w-100 img-fluid"
+            alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/immg2.jpg"
+            class="d-block w-100 img-fluid"
+            alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- script for carousal  -->
-    <script>
-        $('.carousel').carousel({
-            interval: 100
-        })
-    </script>
-
 
     <!-- Footer -->
-    <footer class=" container-fluid mt-5">
-
-        <h3 class="text-dark text-center">footer</h3>
-
-        <div class="row justify-content-evenly bg-light text-dark pt-2 pb-5">
-
-            <div class="col-md-3 mt-5 bg-light text-dark shadow rounded-3">
-                <h4>Laravel</h4>
-                <p>Laravel is a web application framework with expressive, elegant syntax. We believe development
-                    must
-                    be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the
-                    pain
-                    out of development by easing common tasks used in most web projects.</p>
-            </div>
-
-            <style>
-                #foot_bar ul li a div {
-
-                    list-style-type: disc;
-                    font-size: 20px;
-                    justify-content: center;
-                    background-color: light-white;
-
-                    display: block;
-
-                    padding: 5px;
-                    text-decoration: solid;
-
-
-                }
-            </style>
-
-           
-            <div class="list-group col-md-3 mt-5 bg-light shadow pt-3  text-center text-decoration-none">
-
-                <a href="index.html" class="list-group-item list-group-item-action active shadow">Home</a>
-
-                <a href="gallery.html" class="list-group-item list-group-item-action shadow">Blog</a>
-
-                <a href="contactus.html" class="list-group-item list-group-item-action shadow">Contact us</a>
-
-                <a href="aboutus.html" class="list-group-item list-group-item-action shadow">About us</a>
-
-                <a href="service.html" class="list-group-item list-group-item-action shadow">Services</a>
-
-            </div>
-
-            <div class="col-md-3 mt-5 bg-light shadow pt-3  text-center text-decoration-none ">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8462.005406115504!2d75.80137434148239!3d26.887151482668166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5ab89c9bf37%3A0xd8f41cc1f37f5b68!2sKADEL%20LABS!5e1!3m2!1sen!2sin!4v1655567128835!5m2!1sen!2sin"
-                    width="280" height="280" style="border:2px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <footer class="container-fluid bg-dark py-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12 text-white">
+          <div class="text-center">
+            <h4>Laravel</h4>
+            <p class="" style="text-align: justify">
+              Laravel is a web application framework with expressive, elegant
+              syntax. We believe development must be an enjoyable and creative
+              experience to be truly fulfilling. Laravel attempts to take the
+              pain out of development by easing common tasks used in most web
+              projects.
+            </p>
+          </div>
         </div>
+
+        <div class="col-lg-4 col-md-3 text-center">
+          <ul class="ml-5 mb-lg-0">
+            <li class="">
+              <a class="nav-link text-white text-capitalize" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="">
+              <a class="nav-link text-white text-capitalize" href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                class="nav-link text-white text-capitalize"
+                href="contactus.html"
+                >Contact us</a
+              >
+            </li>
+
+            <li class="">
+              <a class="nav-link text-white text-capitalize" href="aboutus.html"
+                >About us
+              </a>
+            </li>
+
+            <li class="">
+              <a class="nav-link text-white text-capitalize" href="service.html"
+                >service
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 text-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8462.005406115504!2d75.80137434148239!3d26.887151482668166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5ab89c9bf37%3A0xd8f41cc1f37f5b68!2sKADEL%20LABS!5e1!3m2!1sen!2sin!4v1655567128835!5m2!1sen!2sin"
+            width="280"
+            height="280"
+            style="border: 2px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap Java Script file link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+    <script>
+      $(".carousel").carousel({
+        interval: 100,
+      });
+    </script>
+  </body>
 </html>
